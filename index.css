@@ -1,0 +1,682 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box; 
+}
+
+.navbar{
+    height: 60px;
+    justify-content: space-evenly;
+    background-color: #0f1111;
+    color: white;
+    display:flex;
+    align-items:center;
+
+}
+
+.nav-return a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-return a:hover {
+    color: #007bff;
+}
+
+.nav-return a p span {
+    color: white;
+}
+
+.nav-logo{
+    height:50px;
+    width:100px;
+    cursor: pointer;
+}
+
+.nav-logo-link {
+    text-decoration: none; 
+    display: inline-block; 
+}
+
+.logo1{
+    background-image: url("./assets/amazon_logo.png");
+    height:50px;
+    width:100%;
+    background-size:cover;
+}
+
+.border{
+    border:2px solid transparent;
+}
+
+.border:hover{
+    border:1.5px solid white;
+}
+
+.address-first{
+    color:#cccccc;
+    font-size: 0.85rem;
+    margin-left:15px;
+}
+
+.address-second{
+    font-size: 1rem;
+    margin-left:3px;
+    cursor: pointer;
+}
+
+.address-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-search{
+    display:flex;
+    justify-content: space-evenly;
+    background-color:pink;
+    width:620px;
+    height:40px;
+    border-radius: 4px;
+}
+
+.nav-search:hover{
+    border: 2px solid orange;
+    cursor: pointer;
+}
+    
+.search-select{
+    background-color: #f3f3f3;
+    width:50px;
+    text-align: left;
+    padding-left: 5px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-input{
+    width:100%;
+    font-size:1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.search-icon{
+    width:45px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    font-size:1.2rem;
+    background-color:#febd68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+}
+
+span{
+    font-size:0.7rem;
+}
+
+.nav-contact {
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-contact .nav-second {
+    font-size: 0.7rem;
+}
+
+.nav-second{
+    font-size:0.85rem;
+    color:white;
+    font-weight:700;
+    cursor: pointer;
+}
+
+.nav-cart i{
+    font-size: 30px;
+}
+
+.nav-cart{
+    font-size:0.85rem;
+    font-weight:700;
+    cursor: pointer;
+}
+
+.panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.panel-all {
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 8px;
+    margin-right: 10px;
+}
+
+.panel-all:hover {
+    border: 1px solid white;
+}
+
+.panel-ops {
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-ops p {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 8px;
+}
+
+.panel-ops p:hover {
+    border: 1px solid white;
+}
+
+.panel-deals {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-left: auto;
+    padding: 8px 8px;
+}
+
+.hero-section{
+    background-image: url("./assets/hero_image.jpg");
+    height:380px;
+    background-size:cover;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+}
+
+.hero-msg{
+    background-color:white;
+    color:black;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:0.85rem;
+    width:80%;
+    margin-bottom: 25px;
+}
+
+.hero-msg a{
+    color:#007185;
+    cursor: pointer;
+}
+
+.shop-section{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    background-color:#e2e7e6;
+    gap:15px;
+}
+
+.box{
+    height: 400px;
+    width: 20%;
+    background-color:white;
+    padding: 20px 0px 15px;
+    margin-top:15px;
+}
+
+.box-img{
+    height:300px;
+    background-size:cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-content{
+    margin-left:1rem;
+    margin-right:1rem;
+}
+
+.box-content p{
+    color:#007185;
+    cursor: pointer;
+}
+
+.item-card {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 0.7rem;
+    background-color: white;
+    padding: 20px 15px;
+    overflow: hidden;
+    width: 93%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    border-top: 2px solid transparent;
+    margin-bottom: 1rem;
+}
+
+.item-card-content h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.item-img {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    margin-bottom: 1rem;
+}
+
+.item-card p {
+    color: #007185;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: auto;
+    font-family: Arial, sans-serif;
+}
+
+/* General container styling */
+.section-why--choose {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+/* Section heading styling */
+.section-common--heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-common--subheading {
+    font-size: 1rem;
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Grid layout for the three columns */
+.container.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left and right side sections */
+.choose-left-div,
+.choose-right-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Centered image section */
+.choose-center-div figure img {
+    width: 100%;
+    height: auto;
+}
+
+/* Individual why-choose divs */
+.why-choose--div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.why-choose--div:hover {
+    transform: translateY(-5px);
+}
+
+.common-text--highlight {
+    font-size: 1.5rem;
+    color: #007185;
+    font-weight: bold;
+}
+
+.section-common--title {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Styling for the box layout */
+.box {
+    height: 400px;
+    width: 20%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+}
+
+.box-img {
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.box-content p {
+    color: #007185;
+    cursor: pointer;
+}
+
+/* Ensuring equal size of all boxes */
+.container.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 20px; /* Spacing between columns */
+}
+
+/* To ensure the boxes inside each section have the same height */
+.choose-left-div, 
+.choose-center-div, 
+.choose-right-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute content evenly */
+    align-items: center;
+    height: 100%; /* Make each box take up equal height */
+}
+
+/* Ensure each "why-choose--div" inside these sections is well-spaced */
+.why-choose--div {
+    flex: 1; /* Allow equal space distribution within the box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center;
+    padding: 20px;
+}
+
+/* Additional styling for the grid */
+.grid-three--cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 20px; /* Spacing between the columns */
+}
+
+/* Ensure the images are responsive */
+.choose-center-div img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Set background colors for each section box */
+.choose-left-div, 
+.choose-center-div, 
+.choose-right-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 20px; /* Padding inside the boxes */
+    border-radius: 10px; /* Optional: To give rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+}
+
+/* Hover effect only on .why-choose--div elements */
+.why-choose--div:hover {
+    background-color: #ffc801; /* Change background color on hover */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Center the image inside the center div */
+.choose-center-div {
+    display: flex;
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+    height: 100%; /* Ensure the div has full height */
+}
+
+/* Make sure the image has a max width and height */
+.choose-center-div img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Item card styling */
+.item-card {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 0.7rem;
+    background-color: white;
+    padding: 20px 15px;
+    overflow: hidden;
+    width: 93%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    border-top: 2px solid transparent;
+    margin-bottom: 1rem;
+}
+
+.item-card-content h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container.grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .choose-left-div, .choose-right-div {
+        width: 100%;
+    }
+    
+    .item-card {
+        width: 100%;
+    }
+}
+
+.product-slider, .product-slider-with-price {
+    background: #fff;
+    margin: 0 50px;
+    padding: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.product-slider .products, .product-slider-with-price .products {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 15px;
+    scroll-behavior: smooth;
+    gap: 15px;
+}
+
+.product-slider .products img, .product-slider-with-price .products .product-img-container img {
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-slider .products img:hover, 
+.product-slider-with-price .products .product-img-container img:hover {
+    transform: scale(1.1);
+}
+
+.product-slider .products::-webkit-scrollbar, 
+.product-slider-with-price .products::-webkit-scrollbar {
+    display: none;
+}
+
+.product-slider-with-price .product-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    flex: 0 0 auto;
+    width: 200px;
+}
+
+.product-slider-with-price .product-card .product-img-container img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.product-slider-with-price .product-card .product-offer {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.product-slider-with-price .product-card .product-price {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #757575;
+}
+
+.product-slider-with-price .product-card h4 {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .product-slider .products img,
+    .product-slider-with-price .products .product-img-container img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .product-slider-with-price .product-card {
+        width: 150px;
+    }
+}
+
+
+footer{
+    margin-top: 0px;
+}
+
+.foot-panel1 a {
+    color: white;
+    text-decoration: none; 
+}
+
+.foot-panel1 {
+    background-color: #37475a; 
+    color: white;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:0.85rem;
+}
+
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height:300px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+ul { 
+    margin-top:20px;
+}
+
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top:10px;
+    color: #dddddd;
+}
+
+ul a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.foot-panel3 {
+    background-color: #222f3d;
+    color: white;
+    height: 70px;
+    border-top: 0.5px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.logo {
+    background-image: url("https://media.geeksforgeeks.org/wp-content/uploads/20240326183545/amazon.png");
+    height: 40px;
+    width: 9rem;
+    background-size: cover;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+}
+
+.options select {
+    background-color: #222f3d;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.options select:focus {
+    outline: none;
+    border-color: #ff9900;
+}
+
+
+.foot-panel4{
+    background-color: #0f1111;
+    color:white;
+    height:80px;
+    font-size:0.7rem;
+    text-align:center;
+}
+
+.pages{
+    padding-top:25px;
+}
+
+.cpyryt{
+    padding-top:5px;
+}

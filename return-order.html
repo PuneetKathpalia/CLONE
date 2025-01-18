@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Order</title>
+    <link rel="stylesheet" href="returns-order.css">
+</head>
+<body>
+
+    <!-- Success Alert -->
+    <div class="alert alert-success" id="success-alert" style="display: none;">
+        Your return request has been successfully submitted!
+    </div>
+
+    <section class="return-order-section">
+        <div class="container">
+            <h2 class="section-heading">Return Order</h2>
+            <p class="section-subheading">Please specify the reason for returning your order.</p>
+        </div>
+
+        <div class="return-reason-section">
+            <form action="#" method="POST" id="return-form">
+                <label for="order-id">Order ID</label>
+                <input type="text" id="order-id" name="order-id" placeholder="Enter your Order ID" required>
+
+                <label for="reason">Reason for Return</label>
+                <select id="reason" name="reason" required>
+                    <option value="">Select Reason</option>
+                    <option value="damaged">Damaged Product</option>
+                    <option value="wrong-item">Wrong Item Received</option>
+                    <option value="size-issue">Size/Color Issue</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="comments">Additional Comments (Optional)</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Add any comments here"></textarea>
+
+                <button type="submit" class="return-btn">Submit Return Request</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript to show success alert and reset the form fields
+        document.getElementById('return-form').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent the default form submission
+            
+            // Display success alert
+            document.getElementById('success-alert').style.display = 'block';
+            
+            // Reset the form fields after submission
+            document.getElementById('return-form').reset();
+
+            // Optionally, hide the alert after a few seconds
+            setTimeout(function() {
+                document.getElementById('success-alert').style.display = 'none';
+            }, 5000); // Hide alert after 5 seconds
+        });
+    </script>
+
+</body>
+</html>
